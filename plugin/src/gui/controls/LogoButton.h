@@ -2,7 +2,6 @@
 
 #include <juce_gui_basics/juce_gui_basics.h>
 
-// TODO: make this actually good
 class LogoButton : public juce::Button {
 public:
   LogoButton() : juce::Button("LogoButton") {}

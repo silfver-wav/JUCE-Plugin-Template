@@ -12,12 +12,6 @@ namespace Gui {
 class Button : public juce::Component {
 public:
   Button(const std::string& name, auto id) : label(name) {
-    // TODO: make a better solution for this lookAndFeel application
-    if (id == ParamIDs::invertPolarity || id == ParamIDs::invertWet) {
-      button.setLookAndFeel(&invertPolarityLookAndFeel);
-    } else {
-      button.setLookAndFeel(&toggleButtonLookAndFeel);
-    }
     addAndMakeVisible(button);
     addAndMakeVisible(label);
   }
